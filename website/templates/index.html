@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chatbot Integration</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+  </head>
+  <body>
+    <button id="chatbot-button" aria-label="Open chat">
+      <img
+        src="../assets/img/widget_logo1.png"
+        alt="Open chat"
+        style="width: 24px; height: 24px"
+      />
+    </button>
+    <div id="chatbot-container">
+      <div id="chatbot-header" class="unselectable">
+        <div class="header-left">
+          <img
+            src="../assets/img/main_logo_small.png"
+            alt="Chat Support Logo"
+            class="header-logo"
+          />
+          <h3>Epo Bob</h3>
+        </div>
+        <div class="header-button-container unselectable">
+          <button id="maximize-chat" aria-label="Maximize chat">
+            <img src="../assets/logos/maximize_logo1.svg" class="icon" />
+          </button>
+          <button id="refresh-chat" aria-label="Refresh chat">
+            <img src="../assets/logos/refresh_logo1.svg" class="icon" />
+          </button>
+          <button id="close-chat" aria-label="Close chat">
+            <img src="../assets/logos/close_logo2.svg" class="icon" />
+          </button>
+        </div>
+      </div>
+      <div id="chatbox"></div>
+      <div id="input-area">
+        <textarea
+          id="chat-input"
+          rows="1"
+          placeholder="Type your message..."
+        ></textarea>
+        <button id="send-button" disabled class="unselectable">
+          <img
+            src="../assets/logos/message_send2.svg"
+            class="icon"
+            alt="Send"
+          />
+        </button>
+        <button id="scroll-to-bottom-button" aria-label="Scroll to Bottom">
+          <img src="../assets/logos/down-arrow4.svg" class="mini-icon" />
+        </button>
+      </div>
+      <div class="resize-handle top-left"></div>
+    </div>
+
+    <script>
+      window.embeddedChatbotConfig = {
+        chatbotId: "12345",
+        domain: "127.0.0.1:5000",
+      };
+    </script>
+    <script src="http://127.0.0.1:5000/static/embed.js" defer></script>
+  </body>
+</html>

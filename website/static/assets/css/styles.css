@@ -1,0 +1,264 @@
+:root {
+    --chatbot-button-color:black;
+    --header-color:#f4f4f4;
+    --primary-color: #000000;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: Rubik , Quicksand ,Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+#chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--chatbot-button-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height:55px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#chatbot-button:hover {
+    background-color: #35383c;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 500px;
+    max-height: calc(100vh - 110px);
+    min-height: 300px;
+    min-width: 300px;
+    background-color: rgb(44, 42, 42);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Changed from flex to none */
+    flex-direction: column;
+    transform-origin: bottom right;
+}
+
+#chatbot-container.popping-up {
+    display: flex;
+    animation: popUp 0.3s ease-out forwards;
+}
+
+#chatbot-container.popping-down {
+    display: flex;
+    animation: popDown 0.3s ease-in forwards;
+}
+
+#chatbot-header {
+    background-color: var(--header-color);
+    color: rgb(14, 14, 14);
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+#chatbot-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+#close-chat, #maximize-chat, #refresh-chat {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    padding-bottom: 0px;
+    
+}
+
+#chatbox {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 200px; /* Ensure there's always space for messages */
+    overflow-y: scroll; /* Allow vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+#chatbox::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.chat-message {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.user-message {
+    background-image: linear-gradient(to top right,rgba(0, 0, 255, 0.758), rgba(195, 0, 195, 0.783));
+    /* background-color: var(--primary-color); */
+    color: white;
+    align-self: flex-end;
+    border-radius: 20px 5px 20px 20px;
+}
+
+.bot-message {
+    background-color: #e9ecef;
+    align-self: flex-start;
+    border-radius: 5px 20px 20px 20px;
+}
+
+#input-area {
+    position : relative;
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: white;
+    border-top: 1px solid var(--border-color);
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    resize: none;
+    overflow-y: auto;
+    max-height: 300px;
+    min-height: 30px;
+
+}
+
+#chat-input:focus {
+    outline: none;
+    border: none;
+}
+
+#send-button {
+    background-color: white;
+    padding-bottom: 5px;
+    border: none; 
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#send-button.active {
+    opacity: 1;
+    /* cursor: pointer; */
+}
+
+#send-button.active:hover{
+    background-color: #f2f2f2;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+.maximize-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.unselectable {
+    -webkit-user-select: none;  /* Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* IE10+/Edge */
+    user-select: none;          /* Standard */
+}
+
+
+#scroll-to-bottom-button {
+    position: absolute;
+    right: 15px;
+    bottom: calc(100% + 20px); /* 20px above the input area */
+    background-color: #f1f1f1;
+    color: white;
+    border: rgba(128, 128, 128, 0.596) 1px solid;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    
+    /* Transition for smooth appearance/disappearance */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#scroll-to-bottom-button:hover{
+    background-color: #e0e0e0;
+}
+
+#scroll-to-bottom-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scroll-to-bottom-button.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mini-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#input-area {
+    position: relative; /* Ensure the input area is a positioned container */
+}
+
+#char-counter {
+    position: absolute;
+    bottom: 8px;
+    right: 18px; /* Align it to the right */
+    font-size: 10px;
+    color: grey;
+    pointer-events: none; /* Prevent interaction with the counter */
+}

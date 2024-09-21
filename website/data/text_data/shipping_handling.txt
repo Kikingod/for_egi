@@ -1,0 +1,154 @@
+Shipping & Handling
+Which countries do you ship to?
+We are generally able to ship to most countries via Express Shipping, and many countries via Standard Shipping. Shipping methods may alter due to different situations. After proceeding to Checkout, the available shipping method(s) and cost will be stated before the payment page.
+
+Note:
+Note: For countries and areas of Africa, Alaska, Argentina, Canada, Hawaii, Kuwait, Mauritius, Montenegro and Sri Lanka, to name a few, we can only do Express Shipping. This may be subjected to changes due to unpredictable events such as pandemic, war, and etc.
+
+How much does shipping cost?
+We have two shipping methods - Standard Shipping and Express Shipping.
+
+Standard Shipping is free for most countries/areas.
+
+Express Shipping via DHL Express or FedEx is 10-40USD (excluding tax) depending on your country. If your order is over 500USD, DHL Express Shipping is free*.
+
+*The KiiBOOM keyboards are not eligible for free shipping.
+
+Shipping fees exclude import taxes or processing fees that may be applicable for your country. Epomaker is not responsible for such fees. Should you refuse to pay the tax/customs fees, shipping fees will still be deducted from the amount paid for the two-way freight charges. The cost of the freight charges may be more than the amount reflected on your order due to tax and other miscellaneous fees.
+
+Standard Shipping via YunExpress is a tax-inclusive option for some countries. However, Epomaker will not be responsible for additional administrative or handling fees charged by your local courier company or customs. Please kindly check this with your local customs.
+
+For certain remote areas, there may be additional charges via Express Shipping. We will contact you if there is a need to make additional payments. Should you have any other queries regarding shipments, please contact us before placing an order.
+
+How long does it take to receive the order after it is placed?
+For in-stock products, your order is expected to be shipped within 3 working days. Customized items and pre-orders take a longer time (do check in with our staff for more information). On normal non-sale days, once your parcel is shipped:
+
+For Standard Shipping, it takes about 2-3 weeks for items to be delivered after it is shipped. For some countries, it might take up to 1-2 months, depending on your country and its custom procedure. The duration for transit is beyond our control. Epomaker does not arrange refunds for such cases. Please consider an upgrade to DHL Express or keep the waiting time in mind.
+For Express Shipping, it takes about 3-10 days for items to be delivered after it is shipped.
+Note:
+Shipping methods and period might be affected and changed due to festive seasons, pandemic circumstances or other unforeseen circumstances.
+
+Who does pay for the import tax/custom fees?
+Customers have to bear any form of custom/import/processing fees that are applicable for your parcel.
+
+If the custom fees and the delivery of the parcel are rejected by the recipient, the shipping cost still needs to be paid. Epomaker only arranges the refund of the order amount after deducting the shipping cost incurred.
+
+How do I get help for my order?
+In general, upon receiving your parcel, please confirm the contents of the package and ensure that the package is in good condition before signing for it. All customers are strongly advised to take an unboxing video of their parcel and packaging when opening their parcels and products.
+
+For faulty/missing items, please send an email to support@epomaker.com for after-sale services. The following details are required.
+
+Send an email to support@epomaker.com with an appropriate Subject Title
+Provide your order number and state the issue clearly
+Attach photos and videos to show that your product is faulty/missing. Shipping details on the parcel packaging have to be clearly visible.
+If the photos/videos provided are insufficient to prove the stated issue, we will enquire more. Once the issue has been confirmed, we will arrange for a replacement, partial refund or a full refund (where applicable). For incorrect products, Epomaker reserves all rights in deciding whether you need to return the incorrect item or not. Please kindly contact us via email first. Our team aims to review your email within 3 working days.
+
+ 
+
+How do I cancel order?
+Cancellation or/and modification of orders can only be done manually via our staff, provided that our Warehouse Team has not processed your order.
+
+As our Support Team may not be available during non-working days and weekends, please place your order wisely as support cannot be guaranteed for such requests.
+
+Should you really need to cancel or/and modify your order after purchase, please contact us via our support email (support@epomaker.com) or website chat. We will help you with the changes if that could be done.
+
+For other queries, the fastest way to contact us is via our website or Discord
+
+Do I get tracking details for my order?
+After placing an order, you will receive the order confirmation email. After your order is shipped, you will also receive a tracking email. You can track your order via the tracking number online. Should you not have received the emails or face any difficulties tracking your order, please kindly contact us for support.
+
+What shipping companies do you use?
+We collaborate with 4PX, UBI, SF Express, Yun Express, BTY, FedEx and DHL Express.
+
+Warranty, Refund & Support Policy
+Epomaker offers a 1-year warranty for keyboards, DIY kits, keycap sets and cases (e.g. the case-only products sold separately), and a 3-month warranty for batteries. Accessories such as keycap pullers, switch pullers, free spare keycaps, cables etc., are excluded from the warranty. Epomaker warranty covers any factory defects that might affect the proper functionality of your purchase. Only orders above $0 are covered by warranty, $0 orders are not warranted. To claim for a warranty or confirm whether your product is eligible for return/warranty, please kindly contact us via support@epomaker.com.
+
+The warranty does not extend to any product whose serial number has been defaced or altered, just as the warranty will cease if you make modifications in the software not authorized by Epomaker.
+
+Epomaker has updated the policy, including a 15-day return and refund option for any reason, as well as a 30-day free return for factory defective items. Our 15-day & 30-day warranty applies only to the following countries at this time: Canada, United States, Netherlands, Poland, United Kingdom, Czech Republic, Australia, Brazil, Saudi Arabia, Spain, Ukraine, France, Mexico, Italy, Chile, South Korea, Japan, Switzerland, United Arab Emirates, Portugal, Israel, Russia, Belgium and Germany. Coverage may change under future conditions. Customers in other countries may incur additional fees for warranty service.
+
+
+15-Day Return Policy
+On the ground of disliking a product, you may return any non-customized and non-sales product that is sealed, within the 15 days upon receiving it. To be eligible for a return, your item must be unused and in the same condition that you received it. It also must be in the original packaging. Customized and sales products, accessories, or spare parts are excluded from the 15-day return policy. The shipping fee, handling fees, or any form of tax caused by return will NOT be refunded.
+
+For items that are damaged, incorrect, or faulty upon delivery, you must contact support@epomaker.com within 30 days upon delivery. You need to provide any solid proof of the problem you come across.
+
+Note:
+All customized products (including customized keycaps) are non refundable and cannot be returned to Epomaker, due to hygiene and other factors. This also applies to items such as carry cases, cables, spare keycaps, switch pullers, and other accessories.
+
+If one of the items in the package is defective/incorrect/missing (e.g. keycaps, cables, switch puller, and etc.), Epomaker will decide if a refund or replacement will be given for that particular item affected, on a case-by case basis.
+
+30-Day Return Policy
+For factory defective items within the first 30 days upon delivery, you would need to provide a solid proof. All customers are strongly advised to take an unboxing video of their parcel and packaging. If the item is defective due to manufacturing issues instead of unguided manual modifying/disassembling, Epomaker will provide a shipping label and reship the replacement unit or refund to you after receiving the return parcel.
+
+How can i claim my warranty?
+In order to claim for warranty, you must send an email to support@epomaker.com first and provide the following information:
+
+Your order number
+The proof of purchase of our selling channel or platform
+Images/videos showing the manufacturing problem of the product complying with our warranty policy
+Once we have confirmed that the product is defective, a replacement unit will be sent to you. We may require you to return the defective unit to Epomaker in exchange for a replacement.
+
+How do i return the items to you?
+For returns in the aforementioned 24 countries, please contact support@epomaker.com, and our customer service team will provide you with a link to apply for a shipping label. For returns outside of these 24 countries, after verifying your return request, you will need to email us again within 10 days with the tracking number for your return package. Failure to arrange shipment and provide the tracking number for your return package within the specified time may result in the invalidation of your warranty.
+
+Defective After 30 Days
+For items that are claimed to be faulty after 30 days, you would have to ship the item back to Epomaker to check for any factory defects. Epomaker will not cover the shipping cost under this circumstance.
+
+For the item that is used and covered under warranty, Epomaker will only cover the repair / replacement and the second shipping (excluding any possible local tax / import / administration fees).
+
+For items that are beyond the warranty period (over one year), Epomaker can provide a free repair service under the condition that customers agree to cover the two-way shipping fees.
+
+NOTE: Warranty coverage procedure may vary depending on the product and issue itself. Should you encounter any issues, immediately contact support@epomaker.com. Failure in doing so and worsening the condition of the product may limit or void your warranty.
+
+What happens if the parcel has been shipped but not delivered?
+If you suspect that your package is lost, please contact us at support@epomaker.com and provide your order number. Epomaker will full refund to you after verifying the loss of the package with the courier company.
+
+If your parcel has shown delivered but you did not see it, it could be:
+
+Delivered in/beside a mailbox. Please check your mailbox if you have one.
+
+Received by your family members or your kind neighbors.
+
+If the logistics order indicates that the goods have been delivered but you have not actually received them (porch theft), please provide any of the following proofs to support@epomaker.com, and we will provide you with corresponding compensation:
+
+Police certificate
+Relevant on-site video evidence materials
+Loss proof provided by the logistics company
+Written documentation provided by other qualified individuals.
+Should there be any concern about Standard Shipping, you are encouraged to opt for Express Shipping instead.
+
+Customers are to bear the consequences and fees incurred, if the parcel is undelivered due to any of the following situation:
+
+Wrong/insufficient address or phone number provided by recipient.
+
+Recipient is unreachable when the courier company tries to contact.
+
+Refusal to sign for the package by recipient.
+
+Lost or damaged parcel because recipient opted for “no-signature delivery”
+
+Refusal to pay for the local tax/processing fee by recipient
+
+Refusal to provide supporting documents for custom clearance by recipient
+
+Damage/ Incorrect / Missing Item(s)  package Upon Delivery
+Upon receiving your parcel, please confirm the contents of the package and ensure that the package is in good condition before signing for it. All customers are strongly advised to take an unboxing video of their parcel and packaging when opening their parcels and products.
+
+
+If you have received a damaged product, please provide photos of the outer packaging, inner packaging, and the damaged item as proof of damage. Please send the above-mentioned claims documentation via email to support@epomaker.com.
+If you have received an incorrect product, please provide pictures of the product and the outer packaging with the labels attached.
+If the order tracking shows that the product is missing, the claim will be processed directly.
+If the photos/videos provided are insufficient to prove the stated issue, we will enquire more. Once the issue has been confirmed, we will arrange for a replacement, partial refund or a full refund (where applicable). For incorrect products, Epomaker reserves all rights in deciding whether you need to return the incorrect item or not. Please kindly contact us via email first.
+Warranty not applicable when:
+Damages that are caused by misuse, abuse, installation, swapping, self-repairing and/or modifications, or maladjustment of the product, or neglect, overdriving, and similar actions;
+Products that are not purchased from https://epomaker.com/ (That is, if you had purchased it from AliExpress, Amazon, crowd-funding campaigns, local dealers and etc., please contact the store or distributor directly);
+Defects in consumables, or use beyond the expected lifetime of the consumable in question;
+Users do not follow the “User Guide”, instructions, or other additional safety, use, or warnings included in the product materials;
+Products are used commercially;
+Unsupervised assembly use of products by children under 18 years of age;
+Products have been modified or repaired by people not authorized by Epomaker;
+Products become faulty due to poor weather conditions or any natural disaster;
+If you have read through the policy and you still have more questions, please feel free to contact support@epomaker.com.
+
+Epomaker reserves all rights. Before purchasing, you need to check and confirm the policy. The policy on the page can be changed without prior notice.

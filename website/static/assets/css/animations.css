@@ -1,0 +1,107 @@
+@keyframes popUp {
+    0% { 
+        transform: scale(0.7) translate(30%, 30%);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+    }
+    60% { 
+        transform: scale(1.05) translate(-2%, -2%);
+        opacity: 1;
+    }
+    100% { 
+        transform: scale(1) translate(0, 0);
+        box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+    }
+}
+
+@keyframes popDown {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(0.5); opacity: 0; }
+}
+
+#chatbot-container {
+    transform-origin: bottom right;
+    transition: all 0.3s ease;
+}
+
+#chatbot-container.popping-up {
+    animation: popUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+#chatbot-container.popping-down {
+    animation: popDown 0.3s ease-in forwards;
+}
+
+
+#maximize-chat img {
+    transition: transform 0.3s ease; /* Smooth transition for both hover and non-hover states */
+}
+
+#maximize-chat:hover img {
+    transform: scale(1.3); /* Increase size by 50% on hover */
+}
+
+#refresh-chat img {
+    transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1); /* Custom easing function for slow start, fast middle, and slow end */
+}
+
+#refresh-chat:hover img {
+    transform: rotate(180deg); /* Rotate 180 degrees on hover */
+}
+
+/* Hover effect when the chat is maximized (button should get smaller) */
+#maximize-chat.minimized:hover img {
+    transform: scale(0.8); /* Decrease size by 20% on hover */
+}
+
+#close-chat img {
+    transition: filter 0.5s ease; /* Smooth transition over 0.5 seconds */
+}
+
+#close-chat:hover img {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(5000%) hue-rotate(-10deg) brightness(100%) contrast(100%);
+}
+
+#chatbot-button {
+    transition: transform 0.3s ease; /* Smooth transition for both hover and non-hover states */
+}
+
+#chatbot-button:hover {
+    transform: scale(1.2); /* Increase size by 50% on hover */
+}
+
+
+.dots {
+    list-style: none;
+    display: flex;
+    margin-top: 5px; /* Adjust this to position the dots */
+    background-color: #e9ecef; /* Background color for the bubble */
+    padding: 8px 12px; /* Padding to give space around the dots */
+    border-radius: 15px; /* Rounded corners for the bubble */
+    max-width: fit-content; /* Adjust to the content width */
+}
+
+.dots div {
+    height: 10px;  /* Small size */
+    width: 10px;   /* Small size */
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: #000000;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    to {
+        opacity: .2;
+        transform: translateY(-4px);  /* Reduced bounce height */
+    }
+}
+
+.dots div:nth-child(2) {
+    animation-delay: 150ms;
+}
+
+.dots div:nth-child(3) {
+    animation-delay: 300ms;
+}
+

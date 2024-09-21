@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chatbot Integration</title>
+    <!-- Use Flask's url_for to link the CSS files -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/css/styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/css/animations.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+
+    <title>{% block title %}Home{% endblock %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          {%if user.is_authenticated %}
+          <a class="nav-item nav-link" id="home" href="/home">home</a>
+          <a class="nav-item nav-link" id="logout" href="/logout">logout</a>
+          {% else %}
+          <a class="nav-item nav-link" id="home" href="/home">Home</a>
+          <a class="nav-item nav-link" id="login" href="/login">Login</a>
+          <a class="nav-item nav-link" id="signup" href="/signup">signup</a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+    {% with messages = get_flashed_messages(with_categories = True) %} {% if
+    messages %} {%for category ,message in messages %} {% if category == 'error'
+    %}
+    <div class="alert alert-danger alert-dismissable fade show" role="alert">
+      {{message}}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {%else%}
+    <div class="alert alert-success alert-dismissable fade show" role="alert">
+      {{message}}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {%endif%} {% endfor %} {% endif %} {% endwith %}
+
+    <div class="container">
+      {% block content %}
+      <h1>Welcome in eaty Planner</h1>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+      {% endblock %}
+    </div>
+    <button id="chatbot-button" aria-label="Open chat">
+      <!-- Use Flask's url_for to link the image files -->
+      <img
+        src="{{ url_for('static', filename='assets/img/widget_logo1.png') }}"
+        alt="Open"
+        style="width: 24px; height: 24px"
+      />
+    </button>
+    <div id="chatbot-container">
+      <div id="chatbot-header" class="unselectable">
+        <div class="header-left">
+          <img
+            src="{{ url_for('static', filename='assets/img/main_logo_small.png') }}"
+            alt="Chat Support Logo"
+            class="header-logo"
+          />
+          <h3>Epo Bob</h3>
+        </div>
+        <div class="header-button-container unselectable">
+          <button id="maximize-chat" aria-label="Maximize chat">
+            <img
+              src="{{ url_for('static', filename='assets/logos/maximize_logo1.svg') }}"
+              class="icon"
+            />
+          </button>
+          <button id="refresh-chat" aria-label="Refresh chat">
+            <img
+              src="{{ url_for('static', filename='assets/logos/refresh_logo1.svg') }}"
+              class="icon"
+            />
+          </button>
+          <button id="close-chat" aria-label="Close chat">
+            <img
+              src="{{ url_for('static', filename='assets/logos/close_logo2.svg') }}"
+              class="icon"
+            />
+          </button>
+        </div>
+      </div>
+      <div id="chatbox"></div>
+      <div id="input-area">
+        <textarea
+          id="chat-input"
+          rows="1"
+          placeholder="Type your message..."
+        ></textarea>
+        <button id="send-button" disabled class="unselectable">
+          <img
+            src="{{ url_for('static', filename='assets/logos/message_send2.svg') }}"
+            class="icon"
+            alt="Send"
+          />
+        </button>
+        <button id="scroll-to-bottom-button" aria-label="Scroll to Bottom">
+          <img
+            src="{{ url_for('static', filename='assets/logos/down-arrow4.svg') }}"
+            class="mini-icon"
+          />
+        </button>
+      </div>
+      <div class="resize-handle top-left"></div>
+    </div>
+
+    <script>
+      window.embeddedChatbotConfig = {
+        chatbotId: "12345",
+        domain: "127.0.0.1:5000",
+      };
+    </script>
+    <!-- Use url_for to load the embed.js file from the static folder -->
+    <script src="{{ url_for('static', filename='embed.js') }}" defer></script>
+  </body>
+</html>
